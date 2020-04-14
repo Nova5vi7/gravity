@@ -5,32 +5,27 @@
 .main-title {
   font: normal bold 60px/70px "FiraSans";
   letter-spacing: -1px;
-  color: $main-title;
+  color: $dark-title;
   margin: 0;
 }
 
 .additional-title {
   font: normal 600 40px/50px "FiraSans";
-  font-family: Fira Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 50px;
   letter-spacing: -1px;
-  color: $main-text;
+  color: $dark-text;
   margin: 0;
 }
 
 .main-text {
   font: normal 18px/28px "FiraSans";
-  color: $main-text;
+  color: $dark-text;
   opacity: 0.7;
 }
 
 .main-btn {
   width: 189px;
   height: 50px;
-  background-color: $btn-color;
+  background-color: $btn-blue;
   font: normal 500 14px/24px "FiraSans";
   text-align: center;
   letter-spacing: 4px;
@@ -38,23 +33,24 @@
   color: #ffffff;
   padding: 0;
   border: none;
+  cursor: pointer;
+  transition: all 0.6s ease;
 
   &:hover {
     background-color: #48d1cc;
-    transition: all 0.6s ease;
   }
 }
 
 .signature {
   font: normal 500 22px/32px "FiraSans";
-  color: $main-text;
+  color: $dark-text;
 }
 
 .nav-title {
   font: normal 500 14px/24px "FiraSans";
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: $main-text;
+  color: $dark-text;
   opacity: 0.7;
   display: inline-block;
   text-align: center;
@@ -62,10 +58,54 @@
     content: "";
     width: 10px;
     height: 2px;
-    background-color: $main-text;
+    background-color: $dark-text;
     opacity: 0.7;
     display: inline-block;
     vertical-align: middle;
     margin-right: 10px;
   }
+}
+
+.nav-link {
+  font: normal 500 14px/24px "FiraSans";
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: $dark-text;
+  opacity: 0.3;
+}
+
+.form-control {
+  width: 170px;
+  height: 40px;
+  font: normal 18px/28px "FiraSans";
+  color: $dark-text;
+  opacity: 0.5;
+}
+
+.footer-btn {
+  width: 100px;
+  height: 40px;
+  background-color: $footer-btn;
+  font: normal 500 14px/24px "FiraSans";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  transition: all 0.6s ease;
+
+  &:hover {
+    background-color: #cd853f;
+  }
+}
+
+.slick-next {
+  width: 50px;
+  height: 50px;
+  color: $slick-light;
 }
