@@ -1,0 +1,9 @@
+@import "./mixins/_font-face.scss"; // импорт миксина
+
+// @include  - команда использования миксина
+// font-face - название миксина
+// в скобках (название шрифта, путь к шрифту, font-weight)
+@include font-face("FiraSans", "../fonts/firasans-regular/FiraSans-Regular");
+@include font-face("FiraSans", "../fonts/firasans-bold/FiraSans-Bold", bold);
+@include font-face("FiraSans", "../fonts/firasans-medium/FiraSans-Medium", 500);
+@include font-face("FiraSans", "../fonts/firasans-thin/FiraSans-Thin", 100);
