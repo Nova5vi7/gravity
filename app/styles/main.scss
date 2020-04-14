@@ -1,0 +1,32 @@
+@import "fonts.scss";
+@import "_var.scss";
+@import "header.scss";
+
+*::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+*:-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+*::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+*:-ms-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #fff;
+}
+body input:required:valid,
+body textarea:required:valid {
+  color: #fff;
+}
+
+//ALWAYS END
+@import "_media.scss";
