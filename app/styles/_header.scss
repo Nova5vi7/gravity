@@ -1,1 +1,44 @@
 @import "_vars.scss";
+
+.site-header {
+  width: 100%;
+  padding: 59px 0 60px;
+  display: inline-block;
+  //   margin-top: 59px;
+
+  &__logo {
+    width: 75px;
+    height: 24px;
+    background-image: url(../img/logo.svg);
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__menu-btn {
+    width: 34px;
+    height: 14px;
+    display: inline-block;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+  }
+  &__menu-icon {
+    width: 18px;
+    height: 3px;
+    display: inline-block;
+    background-color: #000;
+    position: relative;
+    &::before {
+      content: "";
+      width: 34px;
+      height: 3px;
+      position: absolute;
+      background-color: inherit;
+      right: 0;
+      bottom: 8px;
+    }
+  }
+}

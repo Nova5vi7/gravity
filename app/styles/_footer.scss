@@ -1,0 +1,32 @@
+@import "_vars.scss";
+
+.site-footer {
+  background-color: $footer-secondary;
+
+  &__content {
+    padding: 70px 0;
+    white-space: nowrap;
+  }
+  &__logo {
+    width: 75px;
+    height: 24px;
+    background-image: url(../img/footer-logo.svg);
+    display: inline-block;
+    margin-right: 114px;
+    vertical-align: middle;
+  }
+  .main-text {
+    margin-right: 59px;
+    color: $form-light;
+    &:nth-child(6) {
+      margin-right: 95px;
+    }
+  }
+  .footer-btn {
+    display: inline-block;
+  }
+  .form-control {
+    background-color: $form-light;
+    margin-right: 15px;
+  }
+}

@@ -1,0 +1,51 @@
+@import "_vars.scss";
+
+.section-head {
+  position: relative;
+  min-height: calc(100vh - 143px);
+  margin-bottom: 137px;
+  &__content {
+    max-width: 474px;
+    padding-top: 67px;
+  }
+
+  .main-title {
+    margin-bottom: 30px;
+  }
+  .main-text {
+    margin-bottom: 30px;
+  }
+  &__placeholder {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/placeholder.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 0;
+  }
+}
+
+.section-reviews {
+  .additional-title {
+    margin-bottom: 30px;
+  }
+  .main-text {
+    max-width: 444px;
+    margin-top: 20px;
+  }
+  &__name {
+    margin-top: 61px;
+    .main-text {
+      margin: 0;
+    }
+  }
+  &__placeholder {
+    background-image: url(../img/placeholder-two.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 475px;
+    height: 564px;
+  }
+}
