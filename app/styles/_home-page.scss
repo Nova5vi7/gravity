@@ -3,7 +3,6 @@
 .section-head {
   position: relative;
   min-height: calc(100vh - 143px);
-  margin-bottom: 137px;
   &__content {
     max-width: 474px;
     padding-top: 67px;
@@ -19,7 +18,7 @@
     position: absolute;
     width: 50%;
     height: 100%;
-    background-image: url(../img/placeholder.svg);
+    background-image: url(../img/placeholder.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     right: 0;
@@ -28,6 +27,7 @@
 }
 
 .section-reviews {
+  padding-top: 137px;
   .additional-title {
     margin-bottom: 30px;
   }
@@ -35,14 +35,20 @@
     max-width: 444px;
     margin-top: 20px;
   }
-  &__name {
+  &__user {
     margin-top: 61px;
+    display: flex;
+    align-items: center;
+
     .main-text {
       margin: 0;
     }
   }
+  &__user-face {
+    margin-right: 31px;
+  }
   &__placeholder {
-    background-image: url(../img/placeholder-two.svg);
+    background-image: url(../img/placeholder-two.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 475px;

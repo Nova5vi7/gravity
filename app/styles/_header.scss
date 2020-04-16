@@ -12,6 +12,12 @@
     background-image: url(../img/logo.svg);
     display: inline-block;
     vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+  }
+  &__search {
+    font-size: 40px;
   }
   &__content {
     display: flex;
@@ -19,25 +25,43 @@
   }
   &__menu-btn {
     width: 34px;
-    height: 14px;
+    height: 24px;
     display: inline-block;
     border: none;
-    background-color: inherit;
+    background-color: transparent;
     cursor: pointer;
+    padding: 0;
+    &:hover {
+      .site-header__menu-icon {
+        &::after {
+          width: 34px;
+        }
+      }
+    }
   }
   &__menu-icon {
-    width: 18px;
-    height: 3px;
+    width: 34px;
+    height: 12px;
     display: inline-block;
-    background-color: #000;
     position: relative;
+
+    &::after,
     &::before {
       content: "";
-      width: 34px;
       height: 3px;
       position: absolute;
-      background-color: inherit;
+      background-color: #000;
       right: 0;
+    }
+
+    &::after {
+      width: 18px;
+      bottom: 0;
+      transition: width 0.3s ease;
+    }
+
+    &::before {
+      width: 34px;
       bottom: 8px;
     }
   }
