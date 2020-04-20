@@ -18,19 +18,76 @@
       justify-content: center;
     }
   }
+  .section-head {
+    &__content {
+      position: relative;
+      z-index: 1;
+      padding-top: 30%;
+      padding-bottom: 30%;
+    }
+    &__placeholder {
+      width: 100%;
+    }
+    .main-title {
+      color: #fff;
+    }
+    .main-text {
+      color: #fff;
+    }
+  }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .super-easy {
+    &__images-under {
+      right: 50px;
+    }
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .sub-footer {
+    &__nav {
+      flex-direction: column;
+    }
+  }
+  .site-footer {
+    &__content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  .our-clients {
+    &__partners {
+      a {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+  .site-footer {
+    .form-field {
+      margin: 0;
+    }
+  }
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-  /**/
+  .section-reviews {
+    &__user {
+      justify-content: center;
+    }
+    &__user-face {
+      margin: 0 0 10px 0;
+    }
+    &__user-name {
+      text-align: center;
+    }
+  }
 }
 /*==========  Mobile First Method  ==========*/
 
