@@ -15,7 +15,7 @@ var gulp = require("gulp"),
 
 // Скрипты проекта
 
-gulp.task("common-js", function () {
+gulp.task("common-js", function() {
   return gulp
     .src(["app/js/common.js"])
     .pipe(concat("common.min.js"))
@@ -23,11 +23,11 @@ gulp.task("common-js", function () {
     .pipe(gulp.dest("app/js"));
 });
 
-gulp.task("scripts", ["common-js"], function () {
+gulp.task("scripts", ["common-js"], function() {
   return (
     gulp
       .src([
-        "app/js/common.min.js", // Всегда в конце
+        "app/js/common.min.js" // Всегда в конце
       ])
       .pipe(concat("scripts.min.js"))
       // .pipe(uglify()) // Минимизировать весь js (на выбор)
@@ -36,24 +36,24 @@ gulp.task("scripts", ["common-js"], function () {
   );
 });
 
-gulp.task("browser-sync", function () {
+gulp.task("browser-sync", function() {
   browserSync({
     server: {
-      baseDir: "app",
+      baseDir: "app"
     },
-    notify: false,
+    notify: false
     // tunnel: true,
     // tunnel: "projectmane", //Demonstration page: http://projectmane.localtunnel.me
   });
 });
 
-gulp.task("scss", function () {
+gulp.task("scss", function() {
   return gulp
     .src("app/styles/**/*.scss")
     .pipe(
       sass({
         outputStyle: "expanded",
-        includePaths: require("node-bourbon").includePaths,
+        includePaths: require("node-bourbon").includePaths
       }).on("error", notify.onError())
     )
     .pipe(rename({ suffix: ".min", prefix: "" }))
@@ -63,20 +63,20 @@ gulp.task("scss", function () {
     .pipe(browserSync.reload({ stream: true }));
 });
 
-gulp.task("watch", ["scss", "scripts", "browser-sync"], function () {
+gulp.task("watch", ["scss", "scripts", "browser-sync"], function() {
   gulp.watch("app/styles/**/*.scss", ["scss"]);
   gulp.watch(["libs/**/*.js", "app/js/common.js"], ["scripts"]);
   gulp.watch("app/*.html", browserSync.reload);
 });
 
-gulp.task("imagemin", function () {
+gulp.task("imagemin", function() {
   return gulp
     .src("app/img/**/*")
     .pipe(cache(imagemin()))
     .pipe(gulp.dest("dist/img"));
 });
 
-gulp.task("build", ["removedist", "imagemin", "scss", "scripts"], function () {
+gulp.task("build", ["removedist", "imagemin", "scss", "scripts"], function() {
   var buildFiles = gulp
     .src(["app/*.html", "app/.htaccess"])
     .pipe(gulp.dest("dist"));
@@ -88,13 +88,13 @@ gulp.task("build", ["removedist", "imagemin", "scss", "scripts"], function () {
   var buildFonts = gulp.src(["app/fonts/**/*"]).pipe(gulp.dest("dist/fonts"));
 });
 
-gulp.task("deploy", function () {
+gulp.task("deploy", function() {
   var conn = ftp.create({
     host: "hostname.com",
     user: "username",
     password: "userpassword",
     parallel: 10,
-    log: gutil.log,
+    log: gutil.log
   });
 
   var globs = ["dist/**", "dist/.htaccess"];
@@ -103,10 +103,10 @@ gulp.task("deploy", function () {
     .pipe(conn.dest("/path/to/folder/on/server"));
 });
 
-gulp.task("removedist", function () {
+gulp.task("removedist", function() {
   return del.sync("dist");
 });
-gulp.task("clearcache", function () {
+gulp.task("clearcache", function() {
   return cache.clearAll();
 });
 
