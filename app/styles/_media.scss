@@ -5,6 +5,19 @@
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  .site-footer {
+    &__form {
+      justify-content: flex-start;
+    }
+  }
+  .sub-footer {
+    &__nav {
+      justify-content: center;
+    }
+    &__social-net {
+      justify-content: center;
+    }
+  }
 }
 
 /* Small Devices, Tablets */

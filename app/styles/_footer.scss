@@ -1,7 +1,7 @@
 @import "_vars.scss";
 
 .site-footer {
-  padding: 70px 0;
+  padding: 50px 0 43px;
   background-color: $footer-secondary;
 
   &__logo-wrap {
@@ -10,14 +10,17 @@
     display: flex;
     align-items: center;
     height: 40px;
-    margin: 0;
+    margin: 20px 0;
   }
   &__content {
-    height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    .main-text {
+      margin: 20px 0;
+      line-height: 40px;
+    }
   }
   &__logo {
     width: 75px;
@@ -37,25 +40,46 @@
     margin-right: 15px;
   }
   &__form {
+    margin: 20px 0;
     display: flex;
     justify-content: flex-end;
     flex-wrap: nowrap;
   }
-  &__nav-wrap {
-    opacity: 0.2;
-    border-top: 1px solid #ffffff;
-
-    margin-top: 43px;
-    padding-top: 36px;
+}
+.sub-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 25px 0 0;
+  &__nav {
+    // opacity: 0.2;
+    // border-top: 1px solid #ffffff;
     display: flex;
-    justify-content: space-between;
-    color: #ffffff;
-    .main-text {
-      margin-right: 43px;
-    }
+    justify-content: flex-start;
     a {
-      color: #ffffff;
-      margin-left: 11px;
+      font: normal 18px/28px "FiraSans";
+      margin-right: 43px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &__social-net {
+    display: flex;
+    justify-content: flex-end;
+    a {
+      font-size: 16px;
+      margin-left: 15px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+  a {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    color: rgba(255, 255, 255, 0.4);
+    display: inline-block;
+    &:hover {
+      color: #fff;
     }
   }
 }
