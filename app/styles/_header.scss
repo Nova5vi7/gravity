@@ -17,7 +17,20 @@
     background-position: left center;
   }
   &__search {
-    font-size: 40px;
+    font-size: 20px;
+    width: 24px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $btn-blue;
+    }
   }
   &__content {
     display: flex;

@@ -35,7 +35,7 @@ p {
 }
 
 .main-btn {
-  padding: 18px 33px;
+  padding: 13px 33px;
   background-color: $btn-blue;
   font: normal 500 14px/24px "FiraSans";
   text-align: center;
@@ -56,23 +56,23 @@ p {
   color: $dark-text;
 }
 
-.nav-title {
+.third-title {
   font: normal 500 14px/24px "FiraSans";
   letter-spacing: 4px;
   text-transform: uppercase;
   color: $dark-text;
-  opacity: 0.7;
-  display: inline-block;
-  text-align: center;
-  &::before {
-    content: "";
-    width: 10px;
-    height: 2px;
-    background-color: $dark-text;
+
+  &.with-dash {
     opacity: 0.7;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
+    &::before {
+      content: "";
+      width: 10px;
+      height: 2px;
+      background-color: $dark-text;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
   }
 }
 
@@ -84,13 +84,12 @@ p {
   opacity: 0.3;
 }
 
-.form-control {
+.form-field {
   width: 170px;
   height: 40px;
   padding-left: 20px;
   font: normal 18px/28px "FiraSans";
   color: $dark-text;
-  opacity: 0.5;
   border: none;
   margin: 0;
 }

@@ -55,3 +55,72 @@
     height: 564px;
   }
 }
+
+.super-easy {
+  padding: 90px 0 101px 0;
+  .main-text {
+    margin-top: 13px;
+    margin-bottom: 62px;
+  }
+  .additional-title {
+    padding-top: 38px;
+  }
+  &__content {
+    max-width: 475px;
+    margin-right: 0;
+    margin-left: auto;
+  }
+  &__icon-wrap {
+    width: 54px;
+    height: 54px;
+    background-color: $icon-wrap;
+    border-radius: 50%;
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $icon-blue;
+    margin-right: 29px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  &__images-wrap {
+    position: relative;
+    padding-top: 99px;
+  }
+  &__images-under {
+    position: absolute;
+    top: 0;
+    right: 95px;
+  }
+  &__images-above {
+    position: relative;
+    box-shadow: 30px 80px 180px rgba(0, 0, 0, 0.25);
+    margin-right: 0;
+    margin-left: auto;
+    display: block;
+  }
+}
+
+.our-clients {
+  padding: 88px 0 0 0;
+  .with-dash {
+    opacity: 1;
+  }
+  .main-text {
+    margin-top: 17px;
+  }
+  &__partners {
+    padding: 41px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    a {
+      display: inline-block;
+      margin: 41px 0;
+    }
+  }
+}

@@ -1,32 +1,61 @@
 @import "_vars.scss";
 
 .site-footer {
+  padding: 70px 0;
   background-color: $footer-secondary;
 
-  &__content {
-    padding: 70px 0;
+  &__logo-wrap {
+    max-width: 75px;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin: 0;
+  }
+  &__content {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
   }
   &__logo {
     width: 75px;
     height: 24px;
     background-image: url(../img/footer-logo.svg);
-    display: inline-block;
-    margin-right: 114px;
-    vertical-align: middle;
+    background-repeat: no-repeat;
   }
   .main-text {
-    margin-right: 59px;
-    color: $form-light;
-    &:nth-child(6) {
-      margin-right: 95px;
-    }
+    color: #fff;
+    opacity: 1;
   }
   .footer-btn {
     display: inline-block;
   }
-  .form-control {
+  .form-field {
     background-color: $form-light;
     margin-right: 15px;
+  }
+  &__form {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+  }
+  &__nav-wrap {
+    opacity: 0.2;
+    border-top: 1px solid #ffffff;
+
+    margin-top: 43px;
+    padding-top: 36px;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    .main-text {
+      margin-right: 43px;
+    }
+    a {
+      color: #ffffff;
+      margin-left: 11px;
+    }
   }
 }
