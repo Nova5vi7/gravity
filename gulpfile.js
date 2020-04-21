@@ -29,6 +29,7 @@ gulp.task("scripts", ["common-js"], function () {
       .src([
         "app/libs/jquery/jquery.min.js",
         "app/libs/slick/slick.min.js",
+        "app/libs/mixitup/mixitup.min.js",
         "app/js/common.min.js", // Всегда в конце
       ])
       .pipe(concat("scripts.min.js"))

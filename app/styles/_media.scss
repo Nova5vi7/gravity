@@ -44,6 +44,36 @@
       right: 50px;
     }
   }
+  .portfolio-section {
+    .additional-title {
+      margin-bottom: 54px;
+    }
+    &__btn-wrap {
+      padding: 0 0 50px;
+      justify-content: space-between;
+    }
+    &__button {
+      justify-content: flex-start;
+    }
+  }
+  .testimonials-section {
+    .additional-title {
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 40px;
+      margin-top: 30px;
+    }
+    .third-title {
+      margin-top: 25px;
+    }
+    img {
+      max-width: 100%;
+      max-width: 0 auto;
+    }
+    .slider-controls {
+      display: none;
+    }
+  }
 }
 
 /* Extra Small Devices, Phones */

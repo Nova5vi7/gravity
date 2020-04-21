@@ -43,7 +43,7 @@
           <button class="site-header__search">
             <i class="icon-search"></i>
           </button>
-          <button class="site-header__menu-btn">
+          <button class="site-header__menu-btn" id="menu-btn">
             <span class="site-header__menu-icon"></span>
           </button>
         </div>
@@ -117,26 +117,38 @@
               of things. Check our service list and view details
             </h2>
           </div>
-          <div class="col-md-5"></div>
-        </div>
-        <div class="services-section__slider-wrap">
-          <div>
-            <div class="row">
-              <div class="col-12">
-                <div class="slide-content">
-                  <img src="./img/placeholder-slide.jpg" alt="" />
-                </div>
+          <div class="col-md-5">
+            <div class="services-section__nav-wrap">
+              <div class="services-section__nav">
+                <a href="#" class="main-text">Multimedia</a>
+                <a href="#" class="main-text">Interactive design</a>
+                <a href="#" class="main-text">Packaging</a>
+                <a href="#" class="main-text">Branding</a>
+              </div>
+
+              <div class="services-section__nav">
+                <a href="#" class="main-text">Creative Strategy</a>
+                <a href="#" class="main-text">UI/UX</a>
+                <a href="#" class="main-text">Coding</a>
               </div>
             </div>
           </div>
+        </div>
+        <div class="services-section__slider-wrap">
           <div>
-            <h1>asdsdg</h1>
+            <div class="services-section__slide-content">
+              <img src="./img/placeholder-slide.jpg" alt="" />
+              <button class="play-btn"></button>
+            </div>
+          </div>
+          <div>
+            <img src="./img/placeholder-six.jpg" alt="" />
           </div>
         </div>
 
         <div class="row">
           <div class="col-12">
-            <div class="slider-controls">
+            <div class="services-section__slider-controls">
               <button class="slider-btn prev">
                 <i class="icon-arrow-left"></i>
               </button>
@@ -201,13 +213,117 @@
       </div>
     </div>
 
+    <div class="portfolio-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h6 class="third-title with-dash">our works</h6>
+            <h4 class="additional-title">Discover our Work</h4>
+          </div>
+          <div class="col-md-6">
+            <div class="portfolio-section__btn-wrap">
+              <button type="button" data-filter="all" class="filter-btn">
+                All
+              </button>
+              <button
+                type="button"
+                data-filter=".category-a"
+                class="filter-btn"
+              >
+                Branding
+              </button>
+              <button
+                type="button"
+                data-filter=".category-b"
+                class="filter-btn"
+              >
+                Web
+              </button>
+              <button
+                type="button"
+                data-filter=".category-c"
+                class="filter-btn"
+              >
+                Development
+              </button>
+              <button
+                type="button"
+                data-filter=".category-d"
+                class="filter-btn"
+              >
+                Films
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" id="mixitup-container">
+        <div class="row">
+          <div class="mix category-a col-md-4 col-6">
+            <div class="portfolio-section__item">
+              <img src="./img/placeholder-mixitup-one.jpg" alt="" />
+            </div>
+          </div>
+          <div class="mix category-b col-md-4 col-6">
+            <div class="portfolio-section__item">
+              <img src="./img/placeholder-mixitup-two.jpg" alt="" />
+            </div>
+          </div>
+          <div class="mix category-b col-md-4 col-6">
+            <div class="portfolio-section__item">
+              <img src="./img/placeholder-mixitup-three.jpg" alt="" />
+            </div>
+          </div>
+          <div class="mix category-a category-d col-md-4 col-6">
+            <div class="portfolio-section__item">
+              <img src="./img/placeholder-mixitup-four.jpg" alt="" />
+              <button class="play-btn"></button>
+            </div>
+          </div>
+          <div class="mix category-c col-md-4 col-6">
+            <div class="portfolio-section__item">
+              <img src="./img/placeholder-mixitup-five.jpg" alt="" />
+            </div>
+          </div>
+          <div class="mix category-d col-md-4 col-6">
+            <div class="portfolio-section__item">
+              <img src="./img/placeholder-mixitup-six.jpg" alt="" />
+              <button class="play-btn"></button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-9">
+            <div class="portfolio-section__description">
+              <p class="main-text">
+                It picks up the words on the page and displays ads that are
+                similar to those words. Then when someone either performs an
+                action or clicks on your page you will get paid.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="portfolio-section__button">
+              <button class="main-btn">
+                see our works
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="testimonials-section">
       <div class="container slider-container">
-        <div class="slider-wrap">
+        <div class="testimonials-section__slider-wrap">
           <div>
             <div class="row">
-              <div class="col-7">
-                <div class="slide-content">
+              <div class="col-md-5 order-md-last">
+                <img src="./img/tesimonial1.jpg" alt="" />
+              </div>
+              <div class="col-md-7 order-md-first">
+                <div class="testimonials-section__slide-content">
                   <h5 class="third-title with-dash">Testimonials</h5>
                   <h2 class="additional-title">
                     "Professionals in their craft! All products were super great
@@ -217,13 +333,28 @@
                   <p class="main-text">Manager at Craftwork</p>
                 </div>
               </div>
-              <div class="col-5">
-                <img src="./img/tesimonial1.jpg" alt="" />
-              </div>
             </div>
           </div>
           <div>
-            <h1>azazazaz</h1>
+            <div class="row">
+              <div class="col-md-5 order-md-last">
+                <img
+                  src="./img/photo-of-woman-using-laptop-3747446 1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-md-7 order-md-first">
+                <div class="testimonials-section__slide-content">
+                  <h5 class="third-title with-dash">Testimonials</h5>
+                  <h2 class="additional-title">
+                    "Professionals in their craft! All products were super great
+                    with strong attention to details, and overall vibe"
+                  </h2>
+                  <h4 class="signature">Polina Kuzina</h4>
+                  <p class="main-text">Manager at Craftwork</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -319,6 +450,7 @@
         </div>
       </div>
     </footer>
+
     <!-- Scripts here -->
     <script src="js/scripts.min.js"></script>
   </body>

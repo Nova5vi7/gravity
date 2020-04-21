@@ -44,10 +44,38 @@
     background-color: transparent;
     cursor: pointer;
     padding: 0;
+
     &:hover {
       .site-header__menu-icon {
         &::after {
           width: 34px;
+        }
+      }
+    }
+
+    &.is-open {
+      &:hover {
+        .site-header__menu-icon {
+          &::after,
+          &::before {
+            width: 20px;
+          }
+        }
+      }
+      .site-header__menu-icon {
+        &::after,
+        &::before {
+          right: 50%;
+          transform-origin: center;
+        }
+        &::after {
+          transform: rotate(135deg) translateY(-50%);
+          width: 34px;
+          bottom: 4px;
+        }
+        &::before {
+          transform: rotate(-135deg) translateY(-50%);
+          bottom: 4px;
         }
       }
     }
@@ -65,12 +93,12 @@
       position: absolute;
       background-color: #000;
       right: 0;
+      transition: all 0.3s ease;
     }
 
     &::after {
       width: 18px;
       bottom: 0;
-      transition: width 0.3s ease;
     }
 
     &::before {

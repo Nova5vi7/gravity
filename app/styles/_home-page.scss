@@ -153,31 +153,134 @@
   .main-text {
     margin-top: 13px;
   }
-  .signature {
+  .slick-slide {
+    margin-right: 50px;
   }
-}
-.slide-content {
-  padding-bottom: 100px;
+  .slick-dots {
+    margin: 30px 0 0;
+    padding: 0;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      list-style: none;
+
+      &:last-child {
+        button {
+          margin-right: 0;
+        }
+      }
+      &.slick-active {
+        button {
+          background-color: $btn-orange;
+        }
+      }
+    }
+    button {
+      font-size: 0;
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      padding: 0;
+      margin-right: 55px;
+      border: none;
+      cursor: pointer;
+      background-color: $slick-light;
+    }
+  }
 }
 
 .services-section {
   padding: 71px 0;
+  overflow: hidden;
 
-  .slider-container {
-    position: relative;
-  }
-  .slider-controls {
-    position: absolute;
+  &__slider-controls {
     bottom: 0;
     left: 0;
+    margin-top: 50px;
   }
-  .slide-content {
-    padding-bottom: 100px;
+
+  img {
+    margin-right: 15px;
+  }
+
+  &__slide-content {
+    position: relative;
+    .play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
   }
   .additional-title {
+    max-width: 539px;
     margin-top: 40px;
   }
   &__slider-wrap {
     padding-top: 100px;
+    width: 300%;
+  }
+  &__nav-wrap {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 68px;
+  }
+  &__nav {
+    a {
+      width: 190px;
+      display: inline-block;
+      margin-bottom: 21px;
+      opacity: 0.5;
+    }
+  }
+}
+
+.portfolio-section {
+  padding: 101px 0 124px;
+  .mixitup-control-active {
+    color: $icon-blue;
+    opacity: 1;
+  }
+  img {
+    max-width: 100%;
+  }
+  &__item {
+    position: relative;
+    margin-bottom: 30px;
+    bottom: 0;
+    box-shadow: 0 0 0 transparent;
+    transition: all 0.4s ease;
+    &:hover {
+      bottom: 20px;
+      box-shadow: -30px 80px 200px rgba(0, 0, 0, 0.25);
+    }
+  }
+  .additional-title {
+    margin: 40px 0 108px;
+  }
+  &__btn-wrap {
+    padding-top: 70px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__description {
+    padding-top: 32px;
+  }
+  &__button {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 32px;
+  }
+  .play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.7s ease;
+    &:hover {
+      border-radius: 50%;
+    }
   }
 }
