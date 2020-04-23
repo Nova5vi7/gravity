@@ -4,7 +4,35 @@
   width: 100%;
   padding: 59px 0 60px;
   display: inline-block;
-  //   margin-top: 59px;
+  position: relative;
+
+  .navigation-menu {
+    position: absolute;
+    z-index: 10000;
+    background-color: $section-light;
+    top: 100%;
+    left: 0;
+    // transform: translate(-50%, -50%);
+    height: 0;
+    width: 100%;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      list-style: none;
+      margin-top: 15px;
+    }
+
+    &.menu-opened {
+      height: calc(100vh - 143px);
+    }
+  }
 
   &__logo {
     width: 75px;
@@ -56,25 +84,22 @@
     &.is-open {
       &:hover {
         .site-header__menu-icon {
-          &::after,
+          &::after {
+            transform: rotate(135deg) scale(0.7);
+          }
           &::before {
-            width: 20px;
+            transform: rotate(-135deg) scale(0.7);
           }
         }
       }
       .site-header__menu-icon {
-        &::after,
-        &::before {
-          right: 50%;
-          transform-origin: center;
-        }
         &::after {
-          transform: rotate(135deg) translateY(-50%);
+          transform: rotate(135deg);
           width: 34px;
           bottom: 4px;
         }
         &::before {
-          transform: rotate(-135deg) translateY(-50%);
+          transform: rotate(-135deg);
           bottom: 4px;
         }
       }

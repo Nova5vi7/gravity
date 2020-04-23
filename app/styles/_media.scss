@@ -74,6 +74,43 @@
       display: none;
     }
   }
+  .branding-section {
+    &__content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__social-net {
+      margin-top: 15px;
+    }
+  }
+  .explore-section {
+    img {
+      margin-bottom: 30px;
+    }
+    &__content {
+      padding-top: 16px;
+    }
+    &__btn-wrap {
+      justify-content: flex-start;
+      padding-top: 20px;
+    }
+  }
+  .awwards-section {
+    &__logo {
+      padding-bottom: 20px;
+    }
+    .awwards-title {
+      padding: 20px 0 0;
+    }
+
+    .main-text {
+      display: inline-block;
+      padding: 20px 0;
+    }
+    &__data {
+      text-align: left;
+    }
+  }
 }
 
 /* Extra Small Devices, Phones */

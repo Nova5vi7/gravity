@@ -170,3 +170,14 @@ p {
     }
   }
 }
+
+.awwards-title {
+  font: normal 500 22px/32px "FiraSans";
+  color: $awwards-dark;
+}
+.singelton-title {
+  font: normal 500 14px/24px "FiraSans";
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: $awwards-dark;
+}

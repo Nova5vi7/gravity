@@ -1,0 +1,108 @@
+@import "_vars.scss";
+
+.site-header {
+  padding-bottom: 63px;
+}
+
+.branding-section {
+  padding: 63px 0 68px;
+
+  .main-title {
+    display: inline-block;
+    max-width: 539px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 63px;
+  }
+
+  &__social-net {
+    display: inline-block;
+    a {
+      font-size: 16px;
+      margin-left: 15px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+  a {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    color: $dark-text;
+    display: inline-block;
+  }
+  img {
+    width: 100%;
+  }
+  .main-text {
+    margin-top: 43px;
+  }
+}
+
+.explore-section {
+  padding: 68px 0 79px;
+  img {
+    width: 100%;
+    position: relative;
+  }
+  .play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  &__content {
+    padding-top: 46px;
+    display: flex;
+  }
+
+  .main-text {
+    display: inline-block;
+    max-width: 540px;
+  }
+  &__btn-wrap {
+    padding-top: 46px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .main-btn {
+    display: inline-block;
+    background-color: $btn-orange;
+    padding: 13px 40px;
+    font: normal 500 14px/24px "FiraSans";
+  }
+}
+
+.our-clients {
+  margin-top: 61px;
+}
+
+.awwards-section {
+  padding: 79px 0 61px;
+
+  &__logo {
+    width: 90px;
+    height: 10px;
+    background-image: url(../img/awwwards-logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+  }
+  &__data {
+    text-align: right;
+  }
+  .main-text {
+    max-width: 230px;
+  }
+  &__midleton {
+    margin-top: 59px;
+  }
+  &__singleton {
+    border-top: 1px solid rgba(22, 22, 22, 0.2);
+    padding-top: 62px;
+  }
+}
