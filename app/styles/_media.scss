@@ -2,6 +2,18 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
+  .portfolio-section {
+    &__button {
+      justify-content: flex-start;
+    }
+  }
+
+  .testimonials-section {
+    .slider-controls {
+      left: auto;
+      right: 0;
+    }
+  }
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -33,6 +45,24 @@
     }
     .main-text {
       color: #fff;
+    }
+  }
+
+  .services-section {
+    &__nav-wrap {
+      padding-top: 30px;
+      max-width: 510px;
+    }
+  }
+
+  .portfolio-section {
+    .additional-title {
+      margin-bottom: 0;
+    }
+
+    &__btn-wrap {
+      padding: 50px 0;
+      justify-content: flex-start;
     }
   }
 }
@@ -150,6 +180,11 @@
       &:last-child {
         margin-bottom: 0;
       }
+    }
+  }
+  .services-section {
+    &__nav-wrap {
+      flex-direction: column;
     }
   }
 }
